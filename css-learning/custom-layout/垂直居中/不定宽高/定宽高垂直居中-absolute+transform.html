@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute+transform</title>
+</head>
+<style>
+    .box {
+        position: relative;
+        width:200px;
+        height: 200px;
+        border: 2px solid #f089af;
+    }
+    .child-box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #fef6ec;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+<body>
+<div class="box">
+    <div class="child-box">
+        中
+    </div>
+</div>
+</body>
+</html>

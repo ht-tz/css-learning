@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter:hue-rotate()与文字彩虹渐变流动效果实例页面</title>
+    <style>
+        .flow-colorful {
+            height: 100px;
+            background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+            animation: hue 6s linear infinite;
+        }
+
+        @keyframes hue {
+            from {
+                filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .flow-slogon {
+            font-size: 100px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, red, yellow, lime, aqua, blue, fuchsia);
+            animation: hue 6s linear infinite;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h4>色彩的流动</h4>
+    <p>色调变化带来的视觉流动假象。</p>
+    <div class="flow-colorful"></div>
+    <h4>文字七彩渐变动效</h4>
+    <h2 class="flow-slogon">CSS新世界</h2>
+</div>
+</body>
+</html>

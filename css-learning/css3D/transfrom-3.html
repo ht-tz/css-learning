@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<style type=text/css>
+
+    .transform-container {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        background-color: #fff;
+    }
+
+    .transform-container > div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-top: 1px solid #0099ff;
+        border-left: 1px solid #af0742;
+        border-right: 1px solid #cb16ea;
+        border-bottom: 1px solid #f4190a;
+    }
+
+    .top {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bottom {
+        left: 50%;
+        top: 50%;
+        /*transform: translate(-50%, -50%);*/
+        background-color: #a9aba5;
+        /* 倾斜函数沿着x周或者Y轴倾斜,元素不能沿着z轴或者3d空间中的向量倾斜  */
+        transform:skewY(60deg);
+        /*transform:skewX(20deg);*/
+    }
+</style>
+<body>
+<div class="transform-container">
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+
+</body>
+</html>

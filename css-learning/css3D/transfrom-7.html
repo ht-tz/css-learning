@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<style type=text/css>
+
+    .transform-container {
+        position: relative;
+        width: 960px;
+        height: 417px;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+        -webkit-perspective: 1600;
+        perspective-origin: 50% 50%;
+    }
+
+    .img1 {
+        position: absolute;
+        width: 275px;
+        height: 328px;
+        animation: img1 .7s ease-out .5s backwards;
+        left: -15px;
+        bottom: 0;
+        object-fit: cover;
+    }
+
+    .img2 {
+        position: absolute;
+        width: 291px;
+        height: 312px;
+        object-fit: cover;
+        animation: img1 .7s ease-out .2s backwards;
+        left: 155px;
+        bottom: 44px;
+    }
+
+    .img3 {
+        position: absolute;
+        width: 354px;
+        height: 371px;
+        animation: img2 .8s linear backwards;
+        left: 308px;
+        top: -15px;
+        object-fit: cover;
+
+    }
+
+    .img4 {
+        position: absolute;
+        width: 303px;
+        height: 263px;
+        animation: img3 .7s ease-out .2s backwards;
+        left: 508px;
+        top: 4px;
+        object-fit: cover;
+
+    }
+
+    .img5 {
+        position: absolute;
+        width: 306px;
+        height: 226px;
+        animation: img3 .7s ease-out .5s backwards;
+        left: 653px;
+        top: -19px;
+        object-fit: cover;
+
+    }
+    @keyframes img1{
+        0%{
+            transform:translate3d(-2000px,0,0);
+        }
+        100%{
+            transform:translate3d(0,0,0);
+        }
+    }
+    @keyframes img2{
+        0%{
+            opacity: 0;
+            transform:scale(0);
+        }
+        30%{
+            opacity: 1;
+            transform:scale(1.2);
+        }
+        40%{
+            opacity: 1;
+            transform:scale(0.85);
+        }
+        50%{
+            opacity: 1;
+            transform:scale(1.15);
+        }
+        60%{
+            opacity: 1;
+            transform:scale(0.9);
+        }
+        70%{
+            opacity: 1;
+            transform:scale(1.1);
+        }
+        80%{
+            opacity: 1;
+            transform:scale(0.95);
+        }
+        90%{
+            opacity: 1;
+            transform:scale(1.05);
+        }
+        100%{
+            opacity: 1;
+            transform:scale(1);
+        }
+    }
+    @keyframes img3{
+        0%{
+            transform:translate3d(2000px,0,0);
+        }
+        100%{
+            transform:translate3d(0,0,0);
+        }
+    }
+
+
+</style>
+<body>
+<div class="transform-container">
+    <img class="img1" src="../img/12.png"></img>
+    <img class="img2" src="../img/1.png"></img>
+    <img class="img3" src="../img/4.png"></img>
+    <img class="img4" src="../img/2.png"></img>
+    <img class="img5" src="../img/3.png"></img>
+</div>
+
+</body>
+</html>

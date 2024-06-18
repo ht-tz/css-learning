@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<style type=text/css>
+
+    .transform-container {
+        position: relative;
+        height: 800px;
+        width: 800px;
+        background-color: #fff;
+    }
+
+    .transform-container > div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        /*bottom:10px ;*/
+        border-top: 1px solid #0099ff;
+        border-left: 1px solid #af0742;
+        border-right: 1px solid #cb16ea;
+        border-bottom: 1px solid #f4190a;
+    }
+
+    .top {
+        /*left: 50%;*/
+        /*top: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+    }
+
+    .bottom {
+        transform: perspective(800px) translateY(60px) rotateX(-50deg);
+        /*transform-style: perserve-3d;*/
+        /*left: 50%;*/
+        /*top: 50%;*/
+        background-color: #a9aba5;
+
+    }
+
+</style>
+<body>
+<div class="transform-container">
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+
+</body>
+</html>

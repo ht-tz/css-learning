@@ -1,0 +1,126 @@
+{
+  "title": "css常用开发技巧分享",
+  "dataList": [
+    {
+      "menuName": "css 书写规范",
+      "menuName1": "css常用的一些书写规范",
+      "image1": "/src/assets/2.png",
+      "image2": "/src/assets/3.png",
+      "component": "standard",
+      "children": [
+        {
+          "name": "书写规范",
+          "component": "writeStandard",
+          "path": "/writeStandard",
+          "memo": ""
+        },
+        {
+          "name": "参考链接",
+          "component": "cssReferenceLink",
+          "path": "/write_link",
+          "memo": ""
+        }
+      ]
+    },
+    {
+      "menuName": "css 常见文本列表处理技巧",
+      "menuName1": "css 文本以及常用列表的处理方法",
+      "image1": "/src/assets/4.png",
+      "image2": "/src/assets/5.png",
+      "component": "customSkill",
+      "children": [
+        {
+          "name": "书写规范",
+          "component": "write"
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "menuName": "css 伪类常用开发技巧",
+      "menuName1": "css 使用伪类进行一些处理",
+      "image1": "/src/assets/6.png",
+      "image2": "/src/assets/7.png",
+      "component": "pseudoClass",
+      "children": [
+        {
+          "name": "书写规范相关链接以及介绍",
+          "component": "write-link",
+          "path": "/write_link",
+          "memo": ""
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "menuName": "css 常见多边形绘制技巧",
+      "menuName1": "纯css绘制多边形",
+      "image1": "/src/assets/8.png",
+      "image2": "/src/assets/9.png",
+      "component": "polygonSkill",
+      "children": [
+        {
+          "name": "书写规范相关链接以及介绍",
+          "component": "write-link",
+          "path": "/write_link",
+          "memo": ""
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "menuName": "css 常见的布局技巧",
+      "menuName1": "css 常见布局实现方法",
+      "image1": "/src/assets/9.png",
+      "image2": "/src/assets/10.png",
+      "component": "laySkill",
+      "children": [
+        {
+          "name": "书写规范相关链接以及介绍",
+          "component": "write-link",
+          "path": "/write_link",
+          "memo": ""
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "menuName": "css 特效分享",
+      "menuName1": "css 经典特效分享",
+      "image1": "src/assets/11.jpg",
+      "image2": "/src/assets/12.jpg",
+      "component": "specialCss;",
+      "children": [
+        {
+          "name": "书写规范相关链接以及介绍",
+          "component": "write-link",
+          "path": "/write_link",
+          "memo": ""
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "menuName": "css 参考学习url",
+      "menuName1": "css 参考学习url",
+      "image1": "/src/assets/13.jpg",
+      "image2": "/src/assets/16.jpg",
+      "component": "specialCss;",
+      "children": [
+        {
+          "name": "书写规范相关链接以及介绍",
+          "component": "write-link",
+          "path": "/write_link",
+          "memo": ""
+        },
+        {},
+        {}
+      ]
+    }
+  ]
+}

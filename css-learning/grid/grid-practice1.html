@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+</head>
+<style type="text/css">
+
+    html, body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 100px 1fr 100px;
+    }
+
+    .grid-container > div {
+        font-size: 50px;
+        text-align: center;
+        border: 1px solid #99cc33;
+    }
+
+
+    .grid-container > :nth-child(1) {
+        /*grid-column: span 3;*/
+        grid-column: 1/4;
+        background-color: #ef342a;
+    }
+
+    .grid-container > :nth-child(2) {
+        background-color: #f68f26;
+    }
+
+    .grid-container > :nth-child(3) {
+        background-color: #4ba946;
+    }
+
+    .grid-container > :nth-child(4) {
+        background-color: #0376c2;
+    }
+
+    .grid-container > :nth-child(5) {
+        /*grid-column: span 3;*/
+        grid-column: 1/4;
+        background-color: #c077af;
+    }
+
+</style>
+<body>
+
+
+<div class="grid-container">
+    <div>header</div>
+    <div>left</div>
+    <div>main</div>
+    <div>right</div>
+    <div>footer</div>
+</div>
+
+</body>
+</html>

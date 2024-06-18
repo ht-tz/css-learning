@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>毛玻璃效果1</title>
+</head>
+<style type="text/css">
+    .pub-position{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin:  auto;
+    }
+    .glass-wrap{
+        width: 325px;
+        height: 185px;
+        margin: 200px auto;
+        background: url('../../img/1.png') no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    .word-wrap,.content{
+        width: 200px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        overflow: hidden;
+        color: #fff;
+    }
+    /* 这里使用同级元素解决文字容器做滤镜被覆盖的问题 */
+    .word-wrap::before{
+        content: '';
+        width: 325px;
+        height: 185px;
+        position: absolute;
+        left: -10px; /* 这个值影响背景图片的位置 */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        filter: blur(30px);
+        background: url('../../img/10.png') no-repeat -52.5px 0;
+        background-size: contain;
+    }
+</style>
+<body>
+<div class="glass-wrap">
+    <div class="pub-position word-wrap"></div>
+    <p class="pub-position content">模糊玻璃</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<style type=text/css>
+
+    .transform-container {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        background-color: #fff;
+    }
+
+    .transform-container > div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border: 1px solid #0099ff;
+    }
+
+    .top {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bottom {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #99cc33;
+        /* 缩放  */
+        transform:scaleX(0.5);
+        /*transform:scaleY(2);*/
+        /*transform:scaleZ(0.5);*/
+    }
+</style>
+<body>
+<a href="https://htmldog.com/references/css/properties/transform/">1</a>
+
+<a href="https://juejin.cn/post/6844903882208837645">2</a>
+
+<div class="transform-container">
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+
+</body>
+</html>

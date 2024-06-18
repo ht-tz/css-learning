@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid-area/grid-template-area双飞翼布局</title>
+</head>
+<style type="text/css">
+
+    html, body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas:
+                'header header header'
+                'left main right'
+                'footer footer footer';
+    }
+
+    .grid-container > div {
+        font-size: 50px;
+        text-align: center;
+        /*border: 1px solid #99cc33;*/
+    }
+
+    .grid-container > :nth-child(1) {
+        grid-area: header;
+        background-color: #ef342a;
+    }
+
+    .grid-container > :nth-child(2) {
+        grid-area: left;
+        background-color: #f68f26;
+    }
+
+    .grid-container > :nth-child(3) {
+        grid-area: main;
+        background-color: #4ba946;
+    }
+
+    .grid-container > :nth-child(4) {
+        grid-area: right;
+        background-color: #0376c2;
+    }
+
+    .grid-container > :nth-child(5) {
+        grid-area: footer;
+        background-color: #c077af;
+    }
+
+</style>
+<body>
+
+
+<div class="grid-container">
+    <div>header</div>
+    <div>left</div>
+    <div>main</div>
+    <div>right</div>
+    <div>footer</div>
+</div>
+
+</body>
+</html>

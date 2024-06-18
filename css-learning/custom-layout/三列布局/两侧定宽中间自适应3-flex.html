@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列定宽一列自适应-flex</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 500px;
+            background-color: #fff;
+            display: flex;
+        }
+
+        .left {
+            flex-shrink: 0;
+            width: 200px;
+
+            background-color: #d0e4a9;
+        }
+
+        .middle {
+            flex-grow: 1;
+            background-color: #92cf94;
+        }
+
+        .right {
+            flex-shrink: 0;
+            width: 200px;
+            min-width: 200px;
+            background-color: #fef6ec;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">1</div>
+    <div class="middle">2</div>
+    <div class="right">1</div>
+</div>
+<div>
+    https://juejin.cn/post/6932370503575617543
+</div>
+</body>
+</html>

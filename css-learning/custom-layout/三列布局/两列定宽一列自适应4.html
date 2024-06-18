@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列定宽一列自适应</title>
+    <style>
+        .container {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            flex-basis: 150px;
+            height: 500px;
+            background-color: #d0e4a9;
+        }
+
+        .middle {
+            flex-basis: 200px;
+            height: 500px;
+            background-color: #92cf94;
+        }
+
+        .right {
+            flex-grow: 1;
+            height: 500px;
+           background-color: #fef6ec;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">1</div>
+    <div class="middle">1</div>
+    <div class="right">2</div>
+
+</div>
+</body>
+</html>

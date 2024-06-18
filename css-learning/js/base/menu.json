@@ -1,0 +1,107 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "menuName": "实时预览",
+            "menuIcon": "realTimePreview",
+            "menuItem": [
+                {
+                    "menuItemName": "实时预览"
+                },
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "menuName": "特征检索",
+            "menuIcon": "featureRetrieval",
+            "menuItem": [
+                {
+                    "menuItemName": "实时预览"
+                },
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "menuName": "车辆大数据",
+            "menuIcon": "realTimePreview",
+            "menuItem": [
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "menuName": "电子地图",
+            "menuIcon": "electronicMap",
+            "menuItem": []
+        },
+        {
+            "id": 5,
+            "menuName": "人像大数据",
+            "menuIcon": "faceRetrieval",
+            "menuItem": [
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "menuName": "重点人员管控",
+            "menuIcon": "keyPerson",
+            "menuItem": [
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "menuName": "一机一档",
+            "menuIcon": "oneMachine",
+            "menuItem": [
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "menuName": "案件中心",
+            "menuIcon": "caseMange",
+            "menuItem": [
+                {
+                    "menuItemName": "录像回放"
+                },
+                {
+                    "menuItemName": "视频广场"
+                }
+            ]
+        }
+    ]
+}

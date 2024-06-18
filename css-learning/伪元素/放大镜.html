@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+        :root {
+            --x: 0;
+            --y: 0;
+            --size: 100px
+        }
+        .magnifier {
+
+            overflow: hidden;
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background: url(https://static.yangzw.vip/codepen/gz.jpg) no-repeat 50%/100% 100%;
+            cursor: pointer
+        }
+
+        .magnifier:before {
+            --size: 0;
+            position: absolute;
+            left: var(--x);
+            top: var(--y);
+            border-radius: 100%;
+            width: var(--size);
+            height: var(--size);
+            background: #333 url(https://static.yangzw.vip/codepen/gz.jpg) no-repeat calc(var(--size) / 2 - var(--x) * 2) calc(var(--size)/2 - var(--y)*2)/1200px 800px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+            content: "";
+            will-change: left, top;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+        }
+
+        .magnifier:hover:before {
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="magnifier"></div>
+
+</body>
+</html>

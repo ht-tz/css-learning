@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位+margin负值</title>
+</head>
+<style>
+    .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 2px solid #f089af;
+    }
+
+    .child-box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #fef6ec;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        /*https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin*/
+        margin: auto; /*上下无边距，左右居中*/
+    }
+</style>
+<body>
+<div class="box">
+    <div class="child-box">
+        中
+    </div>
+</div>
+</body>
+</html>

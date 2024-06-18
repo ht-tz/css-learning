@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu-container {
+            background-color: #2b3139;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 1260px;
+            height: 880px;
+        }
+
+        /*.menu1 {*/
+        /*    height: 100%;*/
+        /*    width: 100%;*/
+
+        /*}*/
+
+        .icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .menu1 {
+            position: relative;
+            width: 300px;
+            height: 420px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #CCD9EAFF;
+            border: 1px #ccc solid;
+        }
+
+        .img2 {
+            height: 234px;
+            width: 255px;
+        }
+
+
+        /*}*/
+
+        .menu-item-container {
+            position: absolute;
+            top: 230px;
+            left: 24px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            height: auto;
+            width: 255px;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+
+        .menu-item {
+            height: 36px;
+            width: 115px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 36px;
+            background-image: url(./img/sec-menu-bg.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer;
+            color: rgb(226, 235, 224);
+        }
+
+        .menu-item:hover {
+            background-image: url(./img/sec-menu-bg-active.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: scale(1.1);
+        }
+
+        /* 奇数 */
+        .menu-item-container div:nth-child(odd) {
+            margin-left: 6px;
+        }
+
+        /* 偶数 */
+        .menu-item-container div:nth-child(even) {
+            margin-left: 10px;
+            background-color: #1b1b1b;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="menu-container">
+
+    <div class="menu1">
+        <img class="icon" src="./img/real-time-preview.png" alt="">
+        <div class="menu-name">实时预览</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+        <div class="menu-item-container">
+            <div class="menu-item">
+                视频广场1
+            </div>
+            <div class="menu-item">
+                视频广场2
+            </div>
+            <div class="menu-item">
+                视频广场3
+            </div>
+            <div class="menu-item">
+                视频广场4
+            </div>
+            <div class="menu-item">
+                视频广场5
+            </div>
+            <div class="menu-item">
+                视频广场6
+            </div>
+            <div class="menu-item">
+                视频广场7
+            </div>
+        </div>
+    </div>
+
+    <div class="menu1">
+        <img class="icon" src="./img/feature-retrieval.png" alt="">
+        <div class="menu-name">特征检索</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+    </div>
+    <div class="menu1">
+        <img class="icon" src="./img/real-time-preview.png" alt="">
+        <div class="menu-name">车辆大数据</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+    </div>
+    <div class="menu1">
+        <img class="icon" src="./img/electronic-map.png" alt="">
+        <div class="menu-name">电子地图</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+    </div>
+    <div class="menu1">
+        <img class="icon" src="./img/real-time-preview.png" alt="">
+        <div class="menu-name">人像大数据</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+    </div>
+    <div class="menu1">
+        <img class="icon" src="./img/keyPerson.png" alt="">
+        <div class="menu-name">重点人员管控</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+    </div>
+    <div class="menu1">
+        <img class="icon" src="./img/one-machine.png" alt="">
+        <div class="menu-name">一机一档</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+    </div>
+    <div class="menu1">
+        <img class="icon" src="./img/case-mange.png" alt="">
+        <div class="menu-name">案件管理</div>
+        <img class="img2" src="./img/menu-bg.png" alt="">
+
+    </div>
+</div>
+</body>
+</html>

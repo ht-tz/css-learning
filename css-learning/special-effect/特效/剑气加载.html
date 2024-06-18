@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特效剑气加载</title>
+    <style>
+        .sword :nth-child(2){
+            right: 0%;
+            top: 0%;
+            animation: sword-two 1s linear infinite;
+            border-right: 3px solid #EFEFFA;
+        }
+
+        .sword :last-child{
+            right: 0%;
+            bottom: 0%;
+            animation: sword-three 1s linear infinite;
+            border-top: 3px solid #EFEFFA;
+        }
+
+        @keyframes sword-two {
+            0% {
+                transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+            }
+        }
+
+        @keyframes sword-three {
+            0% {
+                transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="sword">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <style>
+        .display {
+            background-color: #3a3e50;
+            width: 545px;
+            height: 880px;
+            background-image: url("./img/left-bg.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .platform-info {
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 30px;
+            padding-left: 30px;
+            color: #ccd9eaff;
+            width: 100%;
+            height: 130px;
+        }
+
+        .user-container {
+            width: 50%;
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 30px;
+        }
+
+        .text {
+            flex-shrink: 1;
+            color: #ccd9eaff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .img {
+            width: 73px;
+            height: 73px;
+        }
+
+        .num {
+            color: #ccd9eaff;
+            font-size: 40px;
+            align-self: center;
+            margin-left: 30px;
+        }
+
+        .notice {
+            height: 670px;
+            width: 485px;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+
+        .notice-title {
+            width: 280px;
+            height: 30px;
+            background-image: url(./img/notice-label-box.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ccd9eaff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .notice-content {
+            /*display: grid;*/
+            /*grid-template-rows: repeat(10, 42px);*/
+            /*grid-row-gap: 15px;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+        }
+
+        .notice-li {
+            /*display: grid;*/
+            /*grid-template-columns: 42px 435px;*/
+            /*grid-column-gap: 10px;*/
+
+
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 15px;
+            /*border: 1px solid #ccc;*/
+            box-sizing: border-box;
+        }
+
+        .xh {
+            height: 42px;
+            width: 42px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #ccd9eaff;
+            line-height: 42px;
+            text-align: center;
+            background-image: url(./img/first.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            font-family: YaHei;
+        }
+
+        .sec {
+            background-image: url(./img/second.png);
+        }
+
+        .thi {
+            background-image: url(./img/third.png);
+        }
+
+        .pt {
+            background-image: url(./img/soso.png);
+        }
+
+        .notice-li-content {
+            width: 432px;
+            height: 42px;
+            margin-left: 10px;
+            border-left: 4px solid #2ebeff;
+            /*border-right: 4px solid #2ebeff;*/
+            /*background-color: rgba(51, 51, 102, 0.5);*/
+            box-sizing: border-box;
+        }
+
+        .description {
+            margin: 0 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .base-info {
+            display: flex;
+            margin: 5px 10px 0 10px;
+            justify-content: space-between;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="display">
+    <div class="platform-info">
+        <div class="user-container">
+            <div class="text">平台总注册用户数</div>
+            <div class="user-info">
+                <img class="img" src="./img/platform-user.png" alt=""/>
+                <div class="num">6987</div>
+            </div>
+        </div>
+        <div class="user-container" style="margin-left: 60px">
+            <div class="text">在线用户数</div>
+            <div class="user-info">
+                <img src="./img/oneline-user.png" alt=""/>
+                <div class="num">6987</div>
+            </div>
+        </div>
+    </div>
+    <div class="notice">
+        <!--  公告标题     -->
+        <div class="notice-title">公安厅自治区重要通知</div>
+
+        <div class="notice-content">
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="notice-li">
+                <div class="xh">1</div>
+                <div class="notice-li-content">
+                    <div class="description">
+                        中央区域发布重要通知中央区域发布重要通知中央区域发布重要通知
+                    </div>
+                    <div class="base-info">
+                        <div class="place">xx自治区</div>
+                        <div class="time">2021-07-10 00:00:00</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

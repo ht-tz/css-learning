@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位+margin负值</title>
+</head>
+<style>
+    .box {
+        position: relative;
+        width:200px;
+        height: 200px;
+        border: 2px solid #f089af;
+    }
+    .child-box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #fef6ec;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        text-align: center;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="child-box">
+        中
+    </div>
+</div>
+</body>
+</html>

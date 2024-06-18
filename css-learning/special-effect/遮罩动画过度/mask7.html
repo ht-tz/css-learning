@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mask 碰撞滤镜与混合模式</title>
+    <style>
+        bosy, html {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            filter: contrast(5);
+        }
+
+        .mask-container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background: #fff;
+        }
+
+        .mask-container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: radial-gradient(#000, transparent);
+            background-size: 20px 20px;
+            -webkit-mask: linear-gradient(-180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));        }
+    </style>
+</head>
+<body>
+<div class="mask-container">
+
+</div>
+</body>
+</html>

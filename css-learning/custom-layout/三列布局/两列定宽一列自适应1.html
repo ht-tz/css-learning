@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列定宽一列自适应</title>
+    <style>
+        .container {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .left {
+            float: left;
+            width: 150px;
+            height: 500px;
+            background-color: #d0e4a9;
+        }
+
+        .middle {
+            float: left;
+            width: 200px;
+            height: 500px;
+            background-color: #92cf94;
+        }
+
+        .right {
+            width: calc(100% - 350px);
+            margin-left: 350px;
+            height: 500px;
+            background-color: #fef6ec;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">1</div>
+    <div class="middle">1</div>
+    <div class="right">2</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .container {
+            height: 100%;
+            width: 100%;
+            background-image: url(../../img/4.png);
+            background-size: cover;
+            mask: linear-gradient(90deg, transparent, #fff);
+            -webkit-mask:
+            linear-gradient(135deg, transparent 15px, #fff 0)
+            top left,
+            linear-gradient(-135deg, transparent 15px, #fff 0)
+            top right,
+            linear-gradient(-45deg, transparent 15px, #fff 0)
+            bottom right,
+            linear-gradient(45deg, transparent 15px, #fff 0)
+            bottom left;
+            -webkit-mask-size: 50% 50%;
+            -webkit-mask-repeat: no-repeat;;
+            /* 使用渐变来做遮罩 */
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div></div>
+</div>
+</body>
+</html>

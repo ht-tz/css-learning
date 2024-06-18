@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合并区域</title>
+    <style type="text/css">
+
+        html body {
+            height: auto;
+            width: auto;
+        }
+
+        .gird-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 100px 100px 100px;
+            /* 隐去56789几个元素就能看出来效果 */
+            grid-auto-flow: dense;
+            grid-gap: 40px;
+        }
+
+
+        .gird-container > div {
+            font-size: 50px;
+            text-align: center;
+            border: 1px solid #e5e4e9;
+        }
+
+        /* 网格线属性 */
+        .gird-container :first-child {
+            grid-column: 1;
+            /* 主容器定义成三行就有四条横向的网格网格线 */
+            grid-row: 1/4;
+        }
+
+        .gird-container :nth-child(2) {
+            /*  主容器定义有六列就有七条纵向网格线 */
+            grid-column: 5;
+            grid-row: 1/4;
+        }
+
+        .gird-container > :nth-child(1) {
+
+            background-color: #ef342a;
+        }
+
+        .gird-container > :nth-child(2) {
+            background-color: #f68f26;
+        }
+
+        .gird-container > :nth-child(3) {
+            background-color: #4ba946;
+        }
+
+        .gird-container > :nth-child(4) {
+            background-color: #0376c2;
+        }
+
+        .gird-container > :nth-child(5) {
+            background-color: #c077af;
+        }
+
+        .gird-container > :nth-child(6) {
+            background-color: #f8d29d;
+
+        }
+
+
+        .gird-container > :nth-child(7) {
+            background-color: #b5a87f;
+        }
+
+        .gird-container > :nth-child(8) {
+            background-color: #d0e4a9;
+        }
+
+        .gird-container > :nth-child(9) {
+            background-color: #4dc7ec;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="gird-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <!--  <div class="item">7</div>-->
+    <!--  <div class="item">8</div>-->
+    <!--  <div class="item">9</div>-->
+</div>
+</body>
+</html>

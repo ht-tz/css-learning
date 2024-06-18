@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示网格和隐式网格的区别</title>
+    <style type="text/css">
+
+        html body {
+            height: 50vh;
+            width: 99vw;
+        }
+
+        .gird-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 100px);
+            grid-template-rows: repeat(auto-fill, 100px);
+            /*grid-template-columns: repeat(4,1fr);*/
+            /*grid-template-rows: 100px 100px 100px;*/
+            /*grid-tempalte-rows: repeat(3,100px 80px 100px);*/
+            grid-gap: 20px;
+            height: 100%;
+        }
+
+
+        .gird-container > div {
+            font-size: 50px;
+            text-align: center;
+            border: 1px solid #e5e4e9;
+        }
+
+        .gird-container > :nth-child(1) {
+            background-color: #ef342a;
+        }
+
+        .gird-container > :nth-child(2) {
+            background-color: #f68f26;
+        }
+
+        .gird-container > :nth-child(3) {
+            background-color: #4ba946;
+        }
+
+        .gird-container > :nth-child(4) {
+            background-color: #0376c2;
+        }
+
+        .gird-container > :nth-child(5) {
+            background-color: #c077af;
+        }
+
+        .gird-container > :nth-child(6) {
+            background-color: #f8d29d;
+
+        }
+
+
+        .gird-container > :nth-child(7) {
+            background-color: #b5a87f;
+        }
+
+        .gird-container > :nth-child(8) {
+            background-color: #d0e4a9;
+        }
+
+        .gird-container > :nth-child(9) {
+            background-color: #4dc7ec;
+        }
+
+        .gird-container > :first-child {
+            grid-column-start: -1;
+        }
+
+        .gird-container > :nth-child(2) {
+            /* 第二个元素放到第四行 */
+            grid-row-start: 4;
+        }
+    </style>
+</head>
+<body>
+<div class="gird-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+</div>
+</body>
+</html>

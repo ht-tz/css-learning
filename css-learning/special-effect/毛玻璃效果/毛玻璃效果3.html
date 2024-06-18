@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-image: url("../../img/12.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        height: 600px;
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+    }
+
+    .lj {
+        height: 150px;
+        width: 150px;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .normal {
+
+    }
+
+    .filter {
+        position: relative;
+    }
+
+    .filter:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        filter: blur(2px);
+        z-index: -1;
+    }
+
+    .backdrop-filter {
+        backdrop-filter: blur(6px);
+    }
+</style>
+<body>
+<div class="container">
+    <div class="lj normal">Normal</div>
+    <div class="lj filter">filter</div>
+    <div class="lj backdrop-filter">backdrop-filter</div>
+</div>
+</body>
+</html>

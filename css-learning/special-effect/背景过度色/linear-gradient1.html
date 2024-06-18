@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景色变化</title>
+    <style>
+        .body {
+            display: flex;
+            justify-content: flex-start;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 400px;
+            width: 50%;
+            animation: change 5s infinite;
+            background: linear-gradient(deeppink, yellowgreen);
+        }
+
+        .g-element-copy {
+            height: 400px;
+            width: 50%;
+            animation: change 5s infinite;
+            background: linear-gradient(deeppink, yellowgreen);
+            background: -moz-element(#bg);
+            border-left: 1px dashed #000000;
+        }
+
+        .p {
+            animation: move 6s infinite;
+        }
+
+        @keyframes change {
+            0% {
+                filter: hue-rotate(0);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(400px, 400px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="container" id="bg">
+        <p class="p">Content</p>
+    </div>
+    <div class="g-element-copy">
+        <p class="p">Content</p>
+    </div>
+</div>
+
+</body>
+</html>

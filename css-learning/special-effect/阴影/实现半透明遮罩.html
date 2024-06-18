@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 box-shadow 实现半透明遮罩</title>
+    <style>
+        .hover{
+            position: absolute;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border: 1px solid #666;
+            cursor: pointer;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .1s;
+        }
+
+        .hover:hover {
+            box-shadow: 0 0 0 50vmax rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+<p CLASS="text">背景文字背景文字背景文字背景文字</p>
+<div class="hover">Hover Me</div>
+</body>
+</html>

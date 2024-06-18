@@ -1,0 +1,90 @@
+.standard {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #282c34;
+
+  .title {
+    background-image: linear-gradient(92deg, #f66 0%, #f90 100%);
+    -webkit-background-clip: text;
+    //background-clip: text; /*不生效*/
+    color: #f66;
+    animation: hue 5s infinite linear;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .list-text {
+    margin-bottom: 25px;
+
+    strong {
+      margin-top: 22px;
+      margin-bottom: 22px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    blockquote {
+      padding: 1px 23px;
+      margin: 22px 0;
+      border-radius: 5px;
+      border-left: 4px solid #cbcbcb;
+      color: #ececec;
+      background-color: rgba(45, 49, 58, 0.8);
+    }
+
+    blockquote > p {
+      margin: 10px 0;
+    }
+  }
+
+  p {
+    cursor: pointer;
+    line-height: 1.5vmin;
+    font-size: 2vmin;
+    color: #fff;
+
+    strong {
+      display: inline-block;
+      margin: 0 3px;
+      padding: 0 6px;
+      border-radius: 5px;
+      line-height: 20px;
+      color: #fff;
+
+      .span {
+        color: #fff;
+        font-size: 1.5vmin;
+      }
+    }
+  }
+
+  .link {
+    color: #f66;
+    font-size: 1.8vmin;
+    cursor: pointer;
+    background-image: linear-gradient(92deg, #f66 0%, #f90 100%);
+    -webkit-background-clip: text;
+    animation: hue 5s infinite linear;
+    -webkit-text-fill-color: transparent;
+
+    //display: none;
+  }
+
+  .link :hover {
+    display: block;
+  }
+
+  /*色调滤镜旋转 0-360*/
+  @keyframes hue {
+    from {
+      filter: hue-rotate(0);
+    }
+    to {
+      filter: hue-rotate(-360deg);
+    }
+  }
+}

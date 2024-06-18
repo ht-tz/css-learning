@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-image: url("../../img/12.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        /* 图片不会随着背景的滚动而滚动 */
+        background-attachment: fixed;
+    }
+
+
+    .container {
+        height: 600px;
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .inner {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        margin: 50px auto;
+        padding: 50px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255,0.3);
+        border: 2px solid rgba(255, 255, 255, .5);
+    }
+    .inner::before {
+        position: absolute;
+        content: "";
+        background: inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        filter: blur(10px);
+        z-index: 0;
+    }
+    .text {
+        position: relative;
+        color: #000;
+        z-index: 10;
+        font-size: 24px;
+        line-height: 1.5;
+
+    }
+
+
+
+</style>
+<body>
+<div class="container">
+    <div class="inner">
+        <p class="text">使用 <br/>background-attachment: fixed <br/>filter: bulr() <br/>实现毛玻璃效果</p>
+    </div>
+</div>
+</body>
+</html>

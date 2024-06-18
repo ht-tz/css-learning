@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左定右边自适应2 float+overflow👍</title>
+    <style>
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            width: 200px;
+            height: 400px;
+            background-color: #92cf94;
+        }
+
+        .right {
+            height: 400px;
+            background-color: #3a3e50;
+            /* 一个值表示flex-grow */
+            flex: 1;
+            /* 一个值带单位 flex:3rem表示flex-basis */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+<div>具体参考https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex</div>
+</body>
+</html>

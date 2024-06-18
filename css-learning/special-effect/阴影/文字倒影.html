@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字倒影</title>
+    <style>
+        .row {
+            display: flex;
+        }
+        .row1
+        {
+            position: absolute;
+            left: 0;
+            top: 124px;
+            height: 73px;
+        }
+        div{
+            font-size: 72px;
+            font-weight: bold;
+            color: #50fdff;
+            float: left;
+            width: 645px;
+            -webkit-box-reflect: below 20px
+            -webkit-gradient(linear,left top,left bottom, from(rgba(0,0,0,0)),to(rgba(255,255,255,0.1)));
+        }
+    </style>
+</head>
+<body>
+<div class="row row1">
+    <div class="erp">ERP</div>
+    <div class="plm">PLM</div>
+</div>
+</body>
+</html>

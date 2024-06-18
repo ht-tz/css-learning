@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /*
+        两张图片，一张完全重叠在另外一张之上，然后使用 mask: linear-gradient(45deg, #000 50%, transparent 50%) 分割两张图片：*/
+        .container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background: url(../../img/4.png);
+        }
+
+        .container::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url(../../img/2.png);
+            mask-repeat: no-repeat;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: cover;
+            /* 斜切 */
+            /*-webkit-mask: linear-gradient(45deg, #000 50%, transparent 50%)*/
+            /* 融合过渡 */
+            -webkit-mask: linear-gradient(45deg, #000 40%, transparent 60%)
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div></div>
+</div>
+</body>
+</html>

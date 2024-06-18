@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字立体投影</title>
+    <style>
+        .td {
+            font-size: 60px;
+            color: #a9e110;
+            /*text-shadow为文字添加阴影。可以为文字与  text-decorations  添加多个阴影，阴影值之间用逗号隔开。每个阴影值由元素在X和Y方向的偏移量、模糊半径和颜色值组成。*/
+            text-shadow: 1px 1px #4daa22, 2px 2px #005A79, 3px 3px #005A79, 4px 4px #005A79, 5px 5px #005A79, 6px 6px #005A79, 7px 7px #005A79, 8px 8px #005A79;
+            letter-spacing: 10px;
+        }
+
+        .text-stroke-out {
+            font-size: 60px;
+            color: #fff;
+            /* 支持任意阴影数量的叠加 */
+            text-shadow: 0 2px #111011, 2px 0 #111011,
+            0 -2px #111011, -2px 0 #111011,
+            2px 2px #111011, -2px -2px #111011,
+            -2px 2px #111011, 2px -2px #111011;
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="td">文字3d投影</div>
+<div class="text-stroke-out">文字外描边</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<style type=text/css>
+
+    .transform-container {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        background-color: #fff;
+    }
+
+    .transform-container > div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-top: 1px solid #0099ff;
+        border-left: 1px solid #af0742;
+        border-right: 1px solid #cb16ea;
+        border-bottom: 1px solid #f4190a;
+    }
+
+    .top {
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .img:hover {
+        /*  放大属性 */
+        /*transform: scale(1.2);*/
+        /*transform: rotate3d(1,1,1,30deg);*/
+        /*transform: translate(-30px,-30px);*/
+        animation: imgScale ease-in-out infinite 3s;
+    }
+
+
+    /*   定义动画规则   */
+    @keyframes imgScale {
+
+        /* 定义关键帧幅 */
+
+        0% {
+            transform: scale(1);
+        }
+
+        25% {
+            transform: scale(0.5);
+        }
+
+        50% {
+            transform: scale(0.8);
+        }
+
+        75% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+<body>
+<div class="transform-container">
+    <div class="top">
+        <img class="img" src="../img/2.png">
+    </div>
+</div>
+
+</body>
+</html>

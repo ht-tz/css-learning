@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .img1 {
+            background: url(../../img/2.png) no-repeat left top;
+            background-size: cover;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .img2 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            -webkit-mask: url(../../img/watermark.png);
+            -webkit-mask-size: 3000% 100%;
+            -webkit-animation: maskMove 2s steps(30) infinite;
+        }
+
+        .img2::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url(../../img/4.png) no-repeat left top;
+            background-size: cover;
+        }
+
+        @keyframes maskMove {
+            from {
+                -webkit-mask-position: 0 0;
+            }
+            to {
+                -webkit-mask-position: 100% 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="img1"></div>
+<div class="img2"></div>
+</body>
+</html>

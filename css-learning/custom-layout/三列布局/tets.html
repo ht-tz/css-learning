@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+    #left {
+        float: left;
+        width: 100px;
+        height: 500px;
+        /* margin-left 给整个 #parent 的宽度，这样可以跑到最左边 */
+        margin-left: -100%;
+        background-color: #ffcc99;
+    }
+
+    #center {
+        height: 500px;
+        float: left;
+        width: 100%;
+    }
+
+    #inner_center {
+        height: 500px;
+        /* 这里左右空出位置留给 left right 数字大于实际宽度就可以产生间距！*/
+        margin: 0 200px 0 100px;
+        background-color: #FFCCCC;
+    }
+
+    #right {
+        float: left;
+        width: 200px;
+        height: 500px;
+        /* margin-left 给整个 #right 自身的宽度，这样可以跑到最右边边 */
+        margin-left: -200px;
+        background-color: #99cccc;
+    }
+
+
+</style>
+<body>
+<body>
+
+<div id="parent">
+    <div id="center">
+        <div id="inner_center">中间自适应</div>
+    </div>
+    <div id="left">左列定宽</div>
+    <div id="right">右列定宽</div>
+</div>
+</body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100%;
+            display: flex;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            background: linear-gradient(45deg, #ffcc00, deeppink, #9c27b0);
+            animation: hueRotate 20s infinite alternate;
+        }
+
+        @keyframes hueRotate {
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+</div>
+</body>
+</html>
